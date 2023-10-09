@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Bean Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dry Bean Attributes</h1>
+        <form method="post">
+            {%csrf_token%}
+            <div class="form-group">
+                <label for="area">Area:</label>
+                <input type="number" id="area" name="area" step="0.0001" required>
+            </div>
+            <div class="form-group">
+                <label for="perimeter">Perimeter:</label>
+                <input type="number" id="perimeter" name="perimeter" step="0.0001" required>
+            </div>
+            <div class="form-group">
+                <label for="majorAxisLength">Major Axis Length:</label>
+                <input type="number" id="majorAxisLength" name="majorAxisLength" step="0.0001" required>
+            </div>
+<div class="form-group">
+    <label for="minorAxisLength">Minor Axis Length:</label>
+    <input type="number" id="minorAxisLength" name="minorAxisLength" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="aspectRatio">Aspect Ratio:</label>
+    <input type="number" id="aspectRatio" name="aspectRatio" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="eccentricity">Eccentricity:</label>
+    <input type="number" id="eccentricity" name="eccentricity" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="convexArea">Convex Area:</label>
+    <input type="number" id="convexArea" name="convexArea" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="equivDiameter">Equivalent Diameter:</label>
+    <input type="number" id="equivDiameter" name="equivDiameter" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="extent">Extent:</label>
+    <input type="number" id="extent" name="extent" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="solidity">Solidity:</label>
+    <input type="number" id="solidity" name="solidity" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="roundness">Roundness:</label>
+    <input type="number" id="roundness" name="roundness" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="compactness">Compactness:</label>
+    <input type="number" id="compactness" name="compactness" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="shapeFactor1">Shape Factor 1:</label>
+    <input type="number" id="shapeFactor1" name="shapeFactor1" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="shapeFactor2">Shape Factor 2:</label>
+    <input type="number" id="shapeFactor2" name="shapeFactor2" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="shapeFactor3">Shape Factor 3:</label>
+    <input type="number" id="shapeFactor3" name="shapeFactor3" step="0.0001" required>
+</div>
+<div class="form-group">
+    <label for="shapeFactor4">Shape Factor 4:</label>
+    <input type="number" id="shapeFactor4" name="shapeFactor4" step="0.0001" required>
+</div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <h1>{{y_pred}}</h1>
+    </div>
+</body>
+</html>
